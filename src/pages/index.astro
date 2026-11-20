@@ -19,7 +19,7 @@ import { SITE, METADATA, I18N } from 'astrowind:config';
 import favIconSvg from '~/assets/favicons/favicon.svg';
 
 const metadata = {
-  title: 'Milena — Schweizer Badmintonspielerin',
+  title: 'Milena Schnider — Schweizer Badmintonspielerin',
   ignoreTitleTemplate: true,
 };
 
@@ -55,89 +55,21 @@ const structuredData = [
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Free & open source"
+    tagline="Badminton · Schweiz"
     actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
+    { text: 'Erfolge ansehen', href: '#erfolge' },
+    { text: 'Kontakt', href: '/contact' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+
+    image={{ src: '~/assets/images/actionphoto-swissopen-2026.JPEG', alt: 'Milena Schnider am Swiss Open 2026' }}
   >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro v7</span> + Tailwind CSS
-    </Fragment>
+    <Fragment slot="title">Milena Schnider</Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro v7 +
-        Tailwind CSS v4.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages & Blogs.
+      Offizielle Website der Schweizer Badmintonspielerin Milena Schnider. Hier finden Sie Informationen zu ihren Erfolgen, Turnieren und Neuigkeiten rund um ihre Karriere.
     </Fragment>
   </Hero>
 
-  <!-- SocialProof Widget ************ -->
-
-  <SocialProof
-    id="proof"
-    classes={{ container: '!pb-14 md:!pb-20' }}
-    items={[
-      {
-        value: '#1',
-        label: 'most starred Astro theme',
-        icon: 'tabler:star-filled',
-        color: 'text-amber-400',
-        href: 'https://github.com/arthelokyo/astrowind',
-      },
-      { value: '100', label: 'Lighthouse score', icon: 'tabler:gauge', color: 'text-emerald-500' },
-      { value: 'MIT', label: 'licensed, free to use', icon: 'tabler:license', color: 'text-sky-500' },
-    ]}
-  />
-
-  <!-- QuickStart Widget ************* -->
-
-  <QuickStart
-    id="quick-start"
-    classes={{ icon: 'bg-green-600 dark:bg-green-700' }}
-    tagline="TL;DR"
-    title="One command. That is the whole setup."
-    subtitle="For the people who scroll past the features and ask “how do I run it?”. This is how."
-    commands={['npm create astro@latest -- --template arthelokyo/astrowind']}
-    items={[
-      {
-        title: 'Two minutes, one terminal',
-        description:
-          'Answer the prompts, run <code>npm run dev</code>, open localhost:4321. The demo site is now yours to edit. The only requirement is a current Node.js.',
-        icon: 'tabler:terminal-2',
-      },
-      {
-        title: 'AI-ready out of the box',
-        description:
-          'An <code>AGENTS.md</code> and step-by-step skills tell Claude Code, Cursor or any coding assistant how this template works. Ask it for a page; it knows where things go.',
-        icon: 'tabler:sparkles',
-      },
-      {
-        title: 'Free, MIT licensed, no strings',
-        description:
-          'Use it for client work, side projects or the company site. Star the repo if it saves you an afternoon.',
-        icon: 'tabler:license',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div
-        class="absolute inset-0 bg-[radial-gradient(60%_55%_at_15%_20%,rgb(129_140_248/0.28),transparent_65%),radial-gradient(50%_50%_at_85%_25%,rgb(244_114_182/0.22),transparent_65%)] dark:bg-[radial-gradient(60%_55%_at_15%_20%,rgb(99_102_241/0.25),transparent_65%),radial-gradient(50%_50%_at_85%_25%,rgb(217_70_239/0.18),transparent_65%)]"
-      >
-      </div>
-    </Fragment>
-  </QuickStart>
 
   <!-- Features Widget *************** -->
 
