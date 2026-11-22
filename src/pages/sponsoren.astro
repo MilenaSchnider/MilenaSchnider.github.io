@@ -1,0 +1,28 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+const metadata = {
+  title: 'Sponsoren',
+  description: 'Informationen zu Sponsoring und Partnerschaften mit Milena Schnider.',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Partnerschaften" title="Sponsoren" />
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16 md:pb-24">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl font-bold text-heading dark:text-white">Gemeinsam den Sport fördern</h2>
+      <p class="mt-4 text-lg text-muted dark:text-gray-300">
+        Auf dieser Seite stelle ich meine Partner vor und informiere über Möglichkeiten einer Zusammenarbeit.
+      </p>
+      <a
+        class="mt-6 inline-flex font-semibold text-primary underline underline-offset-4"
+        href="/contact"
+      >
+        Sponsoringanfrage stellen
+      </a>
+    </div>
+  </section>
+</Layout>
