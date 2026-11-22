@@ -11,7 +11,7 @@ metadata:
   title:
     default: Milena Schnider
     template: '%s — Milena Schnider'
-  description: "Hi, Ich bin Milena Schnider und eine leidenschaftliche Badmintonspielerin aus der Schweiz. Willkommen auf meiner offiziellen Website!"
+  description: "\U0001F680 Hi, Ich bin Milena Schnider und eine leidenschaftliche Badmintonspielerin aus der Schweiz. Willkommen auf meiner offiziellen Website!"
   robots:
     index: true
     follow: true
