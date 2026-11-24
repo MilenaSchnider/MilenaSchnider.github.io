@@ -1,0 +1,30 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+
+const metadata = {
+  title: 'Über mich',
+  description: 'Werdegang etc.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Optional tagline"
+    title="Über mich"
+    subtitle="Auf dieser Seite erfahren Sie mehr über mich und meinen sportlichen wie beruflichen Werdegang."
+    image={{
+      src: '~/assets/images/portrait_milena.JPEG',
+      alt: 'Hero image description',
+    }}
+  />
+
+  <Features
+    title="Section Title"
+    items={[
+      { title: 'Feature 1', description: 'Description', icon: 'tabler:star' },
+      { title: 'Feature 2', description: 'Description', icon: 'tabler:rocket' },
+    ]}
+  />
+</Layout>

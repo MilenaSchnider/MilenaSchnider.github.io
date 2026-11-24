@@ -3,6 +3,30 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Home',
+      href: getPermalink('/'),
+    },
+    {
+      text: 'Widgets Test',
+      href: getPermalink('/widgets-test/Bento'),
+    },
+    {
+      text: 'Über mich',
+      href: getPermalink('/ubermich'),
+    },
+    {
+      text: 'Erfolge',
+      href: getPermalink('/erfolge'),
+    },
+    {
+      text: 'Sponsoren',
+      href: getPermalink('/sponsoren'),
+    },
+    {
+      text: 'Kontakt',
+      href: getPermalink('/kontakt'),
+    },
+    {
       text: 'Homes',
       links: [
         {
@@ -111,7 +135,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+  actions: [],
 };
 
 export const footerData = {
