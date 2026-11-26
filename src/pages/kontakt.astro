@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contact',
+  description:
+    'Contact page demo built with AstroWind: a form, contact details and support links in one accessible layout.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Kontakt" title="Schreibe mir eine Nachricht!" />
+
+  <ContactUs
+    id="form"
+    title="Schreibe mir eine Nachricht!"
+    subtitle="Möchtest Du bei meinem Projekt MilenaToLA hautnah dabei sein? Oder bist Du an einem geführten Badmintontraining bei eurem Firmenanlass interessiert? Dann schreib mir eine Nachricht und ich melde mich bei dir!"
+    inputs={[
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+    ]}
+    textarea={{
+      label: 'Nachricht',
+    }}
+    disclaimer={{
+      label:
+        'Durch das Absenden dieses Kontaktformulars stimmst du der Sammlung Deiner persönlichen Daten zu.',
+    }}
+    description="Ich freue mich über deine Nachricht und werde mich so schnell wie möglich bei dir melden!"
+  />
+
+</Layout>
